@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<br>
+<form method="POST"> 
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Open" name="Open" id="Open">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="High"name="High" id="High">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Low" name="Low" id="Low">
+        </div>
+        <div class="col">
+        <input type="text" class="form-control" placeholder="Volume" name="Volume" id="Volume">
+        </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+{% endblock %}
